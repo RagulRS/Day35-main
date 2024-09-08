@@ -3,7 +3,8 @@ import dotenv from 'dotenv'
 
 dotenv.config();
 
-const dbConnect = process.env.MONGODBCONNECTIONSTRING
+// const dbConnect = "mongodb://localhost:27017/Day35";
+const dbConnect = "mongodb+srv://RagulRS:yellowflash@cluster0.ayal0.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
 const connectDB = async() =>{
     try {

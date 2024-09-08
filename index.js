@@ -68,7 +68,7 @@ app.use('/api/mentor',mentRouter);
 app.use('/api/student',stuRouter);
 connectDB();
 
-const port = process.env.PORT;
+const port = 5000;
 
 app.listen(port,()=>{
     console.log("App Listening to port :", port);

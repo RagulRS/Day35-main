@@ -5,7 +5,7 @@ const router = express.Router();
 
 router.post('/create', createMentor);
 router.get('/mentors', getMentorAll);
-router.put('/assign/:id',getMentorAssigned);
-router.get('/ment-student/:id',getStudentListMent);
+router.put('/assign/:_id',getMentorAssigned);
+router.get('/ment-student/:_id',getStudentListMent);
 
 export default router;

@@ -3,7 +3,6 @@ import mongoose from "mongoose";
 const stuSchema = mongoose.Schema({
     firstName:String,
     lastName:String,
-    batch:String,
     course:String,
     email:String,
     mentId:{

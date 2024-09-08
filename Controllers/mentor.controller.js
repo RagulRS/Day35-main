@@ -30,7 +30,7 @@ export const getMentorAll = async(req,res) => {
 
 export const getMentorAssigned = async(req,res) =>{
      try {
-        const mentId = req.params.id;
+        const mentId = req.params._id;
         const {stuId} = req.body;
         const mentors = await Mentor.findByIdAndUpdate(
             mentId,
@@ -50,7 +50,7 @@ export const getMentorAssigned = async(req,res) =>{
 
 export const getStudentListMent = async(req,res) =>{
     try {
-       const mentId = req.params.id;
+       const mentId = req.params._id;
        const students = await Student.find( {mentId: mentId} )
        res.status(200).json({
            message:"Fetched the Students Succesfully",
